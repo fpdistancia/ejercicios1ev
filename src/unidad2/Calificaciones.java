@@ -21,10 +21,42 @@ public class Calificaciones {
 		float promedioF;
 		float promedioQ;
 		float promedio;
+		
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Nota del examen de matemáticas:");
 		examenM = Integer.parseInt(in.readLine());
 		System.out.println("Nota de la primera tarea de matemáticas:");
 		tarea1M = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la segunda tarea de matemáticas:");
+		tarea2M = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la tercera tarea de matemáticas:");
+		tarea3M = Integer.parseInt(in.readLine());
+		
+		System.out.println("Nota del examen de física:");
+		examenF = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la primera tarea de física:");
+		tarea1F = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la segunda tarea de física:");
+		tarea2F = Integer.parseInt(in.readLine());
+		
+		System.out.println("Nota del examen de química:");
+		examenQ = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la primera tarea de química:");
+		tarea1Q = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la segunda tarea de química:");
+		tarea2Q = Integer.parseInt(in.readLine());
+		System.out.println("Nota de la tercera tarea de química:");
+		tarea3Q = Integer.parseInt(in.readLine());
+		
+		promedioM = examenM * 0.9f + ((tarea1M + tarea2M + tarea3M) / 3) * 0.1f;
+		promedioF = examenF * 0.8f + ((tarea1F + tarea2F) / 3) * 0.2f;
+		promedioQ = examenQ * 0.85f + ((tarea1Q + tarea2Q + tarea3Q) / 3) * 0.15f;
+		
+		promedio = (promedioM + promedioF + promedioQ) / 3;
+		
+		System.out.printf("Promedio de matemáticas: %4.2f\n", promedioM);
+		System.out.printf("Promedio de física: %4.2f\n", promedioF);
+		System.out.printf("Promedio de química: %4.2f\n", promedioQ);
+		System.out.printf("Promedio de las tres asignaturas: %4.2f\n", promedio);
 	}
 }
