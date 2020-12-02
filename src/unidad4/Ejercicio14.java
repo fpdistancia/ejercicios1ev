@@ -28,6 +28,8 @@ public class Ejercicio14 {
 		
 		for (int [] v: numeros)
 			System.out.println(Arrays.toString(v));
+		
+		in.close();
 	}
 
 }
