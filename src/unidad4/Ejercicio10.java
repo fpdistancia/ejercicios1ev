@@ -43,8 +43,7 @@ public class Ejercicio10 {
 //		
 //		int [] vector = new int[n];
 //		for (int i=0; i<vector.length; i++)
-//			System.out.print((vector[i] = (int) Math.round(Math.random() * Integer.MAX_VALUE)) + " ");
-//		
+//			System.out.print(((int) Math.round(Math.random() * Integer.MAX_VALUE)) + " ");
 //		System.out.println();
 //		
 //		int min = Integer.MAX_VALUE;
